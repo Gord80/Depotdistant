@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS phase3&4</title> 
+    <style>
+    p {
+  width:400px;
+  margin: 0 auto;
+  height: 2,5em;
+  font-family: "Helvetica Neue", "Arial",  sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-variant-ligatures: normal;
+  font-size: 2rem;
+  letter-spacing: 1px;
+   text-align: right;  
+   text-shadow : 3px 3px 4px #ff8700
+}
+p {
+    width : 400px;
+ height: 2,5em;
+
+ padding: 1em 1em 1em 1em;
+
+ border: 1px solid red;
+
+}
+.autoscroll { overflow: auto; }
+.clipped { overflow: hidden; }
+p {
+ padding : 1em;
+ border : 1px solid black;
+}
+span {
+ padding : 0.5em;
+ border : 1px solid green;
+ background-color: yellow;
+}
+.inline {
+ display: inline;
+}
+.block {
+ display: block;
+}
+.container{
+    align-items: flex-start
+}
+    </style>
+</head>
+<body>
+    <h3>Titre classique no modif</h3>  
+    <p class="autoscroll">
+        Alice ne fut pas très-étonnée, tant elle commençait à s’habituer aux
+        événements extraordinaires. Tandis qu’elle regardait encore l’endroit
+        que le Chat venait de quitter, il reparut tout à coup.
+     </p>
+     <p class="clipped">ombre orangée     Alice ne fut pas très-étonnée, tant elle commençait à s’habituer aux
+        événements extraordinaires. Tandis qu’elle regardait encore l’endroit
+        que le Chat venait de quitter, il reparut tout à coup.
+     </p>
+
+     <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <span class="inline">Mauris tempus turpis id ante mollis dignissim.</span> Nam sed dolor non tortor lacinia lobortis id dapibus nunc.
+       </p>
+       <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <span class="block">Mauris tempus turpis id ante mollis dignissim.</span>
+        Nam sed dolor non tortor lacinia lobortis id dapibus nunc.
+       </p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML exercice 8</title>
+</head>
+<body>
+<form action="destination.php" method="post"> 
+    Nom :   <input type="text" name="nom" size="30" maxlength="12" placeholder="Brigitte">  
+    Prénom :   <input type="text" name="prenom" size="30" readonly> 
+    <input type="submit" value="Envoyer">
+    <br>
+    <textarea name="commentaire" rows="10" cols="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis quis metus ornare semper. In vitae lacus ex. In elementum iaculis malesuada. Maecenas vulputate, erat id molestie dictum, diam dolor faucibus nisl, in pharetra sapien libero eget risus. Morbi vehicula aliquam placerat. Suspendisse mollis tempus dictum. Nullam suscipit nec massa eget viverra. Etiam feugiat facilisis est nec euismod. Quisque convallis, tortor sed placerat lacinia, elit nunc volutpat arcu, vel consequat velit libero at tortor. Suspendisse interdum lacus non felis bibendum facilisis. In sit amet enim mauris.</textarea>`
+<input type="checkbox" name="couleur 1" value="Bleu" checked> Bleu
+<input type="checkbox" name="couleur 2" value="Rouge"> Rouge
+<input type="checkbox" name="couleur 3" value="Vert"> Vert
+<input type="checkbox" name="couleur 4" value="Jaune"> Jaune
+<input type="radio" name="couleur" value="Bleu" checked> Bleu
+<input type="radio" name="couleur" value="Rouge"> Rouge 
+<input type="radio" name="couleur" value="Vert" > Vert
+    <select name="satisfaction" >
+    <option value="Pas satisfait">Pas satisfait</option>
+    <option value="Peu satisfait" selected>Peu satisfait</option>
+    <option value="Satisfait">Satisfait</option>
+    <option value="Très satisfait">Très satisfait</option>
+
+<form action="destination.php" method="post" enctype="multipart/form-data">
+<input type="file" name="fichier" accept="image/jpg">
+<label for="nom">Nom :</label><input type="text" name="nom" id="nom"> 
+
+<fieldset>
+    <legend>Coordonnées</legend>
+    <label for="nom">Nom:</label><input type="text" name="nom" id="?"><br>
+    <label for="?">Email:</label><input type="email" name="email"><br>
+    <label for="date">Date de naissance:</label><input type="date" name="ddn" id="date">
+   </fieldset>
+   <input type="text" placeholder="Entrez votre nom" pattern="^[a-z]+$" required title="Entrez votre nom (que des caractères entre a et z)">
+
+
+</form>    
+</body>
+</html>
