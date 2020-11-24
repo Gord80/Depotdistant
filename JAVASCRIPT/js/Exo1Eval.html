@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>JAVASCRIPT</title>
+
+<script type="text/javascript"> 
+//exercice 1 : calcul du nombre de jeunes, de moyens et de vieux
+var jeunes = 0;
+var moyens = 0;
+var vieux = 0;
+
+    do {
+        var age = parseInt(prompt("Entrez votre âge (si > 99 termine): ",
+        "0"), 10);
+        var condjeunes = age < 20;
+        var condvieux = age > 40;
+        var moyens = !condjeunes && !condvieux;
+        var condcentenaire = age > 99;
+        jeunes += (condjeunes ? 1 : 0);
+        moyens += (moyens ? 1 : 0);
+        vieux += (condvieux ? 1 : 0);
+    } while (!condcentenaire);
+    document.write("Il y a " + jeunes + " jeunes, " + moyens+ " adultes, "
+    + vieux + " vieux (dont un centenaire ça se fête)");
+</script>

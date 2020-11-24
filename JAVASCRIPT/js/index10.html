@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>JAVASCRIPT</title>
+
+    <script>alert("JS10EXOSTABLEAUX !");</script>
+</head>
+<body>
+<script>
+
+//Exercice 1
+
+//Ecrivez un programme permettant de créer un tableau, dont la taille est saisie au clavier.
+//Ensuite l'utilisateur doit rentrer les différentes valeurs du tableau.
+//Puis votre programme doit afficher le contenu du tableau.
+var tableau = [];
+        var taille = parseInt(prompt("Veuillez saisir la taille du tableau : "),10);
+        
+        for(var i=0;i<taille;i++)
+        {   
+            tableau.push("");
+        }
+        for(var j=0;j<taille;j++)
+        {   
+            tableau[j]=prompt("Saisir la valeur "+(j+1)+" du tableau :");
+        }
+        console.log(tableau.join("\n"));
+
+//Exercice 2
+//Créer le programme qui fournira un menu permettant d’obtenir les fonctionnalités suivantes à partir d’un tableau à une dimension :
+
+    //Affichage du contenu de tous les postes du tableau,
+    //Affichage du contenu d’un poste dont l’index est saisi au clavier,
+    //Affichage du maximum et de la moyenne des postes du tableau
+
+//Ce programme sera structuré de la manière suivante :
+
+    //une fonction GetInteger pour lire un entier au clavier,
+    //une fonction InitTab pour créer et initialiser l’instance de tableau : le nombre de postes souhaité sera entré au clavier,
+    //une fonction SaisieTab pour permettre la saisie des différents postes du tableau,
+    //une fonction AfficheTab pour afficher tous les postes du tableau,
+    //une fonction RechercheTab pour afficher le contenu d’un poste de tableau dont le rang est saisi au clavier
+    //une fonction InfoTab qui affichera le maximum et la moyenne des postes.
+
+//Les fonctions seront appelées successivement.
+
+//Exercice 3 Exercice 3 : Tri d’un tableau
+
+//Ecrire le programme qui réalise le tri à bulles. 
+
+function min(tableau)
+        {
+            var min = 9999999;
+            for(var k=0;k<tableau.length;k++)
+            {
+                if(min>tableau[k])
+                    min = tableau[k];
+            }
+            return min;
+        }
+
+        var tableau = [20,18,16,14,12,10,8,9,11,5];
+        var mini = min(tableau);
+        var ind01 = 0;
+        while (tableau[ind01]!=mini)
+        {
+            var ind02 = ind01 + 1;
+            if(!isNaN(tableau[ind02]))
+            {
+                if(tableau[ind01]>tableau[ind02])
+                {
+                    temp = tableau[ind01];
+                    tableau[ind01] = tableau[ind02];
+                    tableau[ind02] = temp;
+                }
+            }
+            else
+                ind01 = -1;
+            ind01++;
+        }
+
+        console.log(tableau.join('\n'));
+
+
+  
+</script>
+<div class="container">
+
+    <div class="row">   
+        <div class="col-12">
+            <h1 style="text-align: center;">JAVASCRIPT</h1>
+            <p> Ma page HTML qui contient un fichier <strong>.js</strong></p>
+            <p>qui se trouve dans une balise <strong>script</strong> en fin de page, <strong>avant</strong> la <strong>fermeture</strong> de la <strong>balise body</strong></p> 
+        </div>        
+    </div>
+
+    <div class="row">
+        <div class="col-5">
+            <button id="Id_btn1" type="button" class="btn btn-primary">Alert()</button>
+            <button id="Id_btn2"type="button" class="btn btn-primary">Prompt()</button>
+            <button id="Id_btn3"type="button" class="btn btn-primary">Confirm()</button>
+            <button id="Id_btn4"type="button" class="btn btn-primary">Console()</button>        
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <h3><p id="texte1"></p></h3>
+            <p id="texte2"></p>                
+        </div>        
+    </div>
+
+</div>
+
+</body>
+</html>

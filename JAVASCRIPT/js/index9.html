@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>FONCTIONS</title>
+
+    <script>alert("mon premier script en javascript !");</script>
+</head>
+<body>
+<script>
+//Exercice 1 Créer les 2 fonctions suivantes :
+//  produit(x, y) qui retourne le produit des 2 variables x, y passées en paramètre.
+//afficheImg(image) qui affiche l'image passée en paramètre. ( Le paramètre image corresond au chemin de votre image )
+
+var x = prompt("Entrez un nombre");
+var y = prompt("Entrez un multiplicateur");
+var multiplication= x*y
+var cube=x*x
+
+    //affiche le cube et l'image
+function cu()
+    {return cube
+
+}
+    alert("Le cube de"+x+ "est égal à"+cube)
+
+    function produit() 
+    {
+       return multiplication
+    }
+    alert("Le résultat de la multiplication est de"+multiplication);
+
+   
+ 
+//Exercice 2 String-Token
+//Concevez la fonction strtok() qui prend 3 paramètres str1, str2, n en entrée et renvoie une chaîne de caractères :
+//str1 est composée d'une liste de mots séparés par le caractère str2. strtok() sert à extraire le nième mot de str1.
+//Exemple :Pour str1 = « robert ;dupont ;amiens ;80000 », strtok (str1, « ; », 3) doit retourner amiens. 
+
+
+
+
+
+</script>
+<div class="container">
+
+    <div class="row">   
+        <div class="col-12">
+            <h1 style="text-align: center;">JAVASCRIPT</h1>
+            <p> Ma page HTML qui contient un fichier <strong>.js</strong></p>
+            <p>qui se trouve dans une balise <strong>script</strong> en fin de page, <strong>avant</strong> la <strong>fermeture</strong> de la <strong>balise body</strong></p> 
+    </div>
+
+    <div class="row">
+        <div class="col-5">
+            <button id="Id_btn1" type="button" class="btn btn-primary">Alert()</button>
+            <button id="Id_btn2"type="button" class="btn btn-primary">Prompt()</button>
+            <button id="Id_btn3"type="button" class="btn btn-primary">Confirm()</button>
+            <button id="Id_btn4"type="button" class="btn btn-primary">Console()</button>        
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <h3><p id="texte1"></p></h3>
+            <p id="texte2"></p>                
+        </div>        
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
